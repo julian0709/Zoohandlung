@@ -34,17 +34,19 @@ public class Ente extends Tier implements Laufen,Fliegen,Schwimmen{
     public void lande(){
         System.out.println("Ich lande");
     }
-    
+    @Override
     public void schwimmlos(){
         System.out.println("Ich schwimme los");
     }
-    
+    @Override
     public void schwimmstop(){
         System.out.println("Ich höre auf zu schwimmen");
     }
+    @Override
     public int getSchwimmGeschwindigkeit(){
         return SchwimmGeschwindigkeit;
     }
+    @Override
     public void setSchwimmGeschwindigkeit(int Geschwindigkeit){
         SchwimmGeschwindigkeit=Geschwindigkeit;
     }
